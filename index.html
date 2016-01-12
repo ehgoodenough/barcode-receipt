@@ -1,12 +1,31 @@
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Barcode Receipts</title>
+        <meta charset="utf-8" />
+        <title>Barcode Receipt - Demo</title>
         <link href="index.css" rel="stylesheet" type="text/css"/>
-        <script src="index.js" type="text/javascript"></script>
     </head>
     <body>
-        <div id="mount"></div>
+        <div>
+            <h1>
+                Barcode Receipt - Demo
+            </h1>
+            <br/>
+            <br/>
+            <div>
+                Some platforms don't yet support the HTML5 <b>getUserMedia</b> feature,
+                but if your feature does, then you can hold out any "receipt" encrypted
+                in "Code 128" to be decoded.
+                You can download <a href="receipts.pdf" target="_blank">some receipts I created</a>,
+                or you can <a href="http://barcode.tec-it.com/en" target="_blank">generate your own</a>.
+                Have fun! :]
+            </div>
+            <br/>
+            <br/>
+            <div id="interactive" class="viewport">
+                <div id="popup"></div>
+            </div>
+        </div>
+        <script src="index.js" type="text/javascript"></script>
     </body>
 </html>
