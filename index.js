@@ -17,7 +17,7 @@ var Receipts = {
         comment: "You saved $4.01!"
     },
     9471534: {
-        merchant: "Julie Darling Donuts",
+        merchant: "Julie Darlings",
         total: "$8.99",
         date: "December 21th, 2015",
         recipient: "Andrew McPherson",
@@ -52,10 +52,10 @@ var render = function(receipt) {
 var popup = function(code) {
     if(Receipts[code] != undefined) {
         $("#popup").html(render(Receipts[code]))
-        $("#popup").addClass("active").addClass("more")
+        $("#popup").addClass("active").addClass("more").removeClass("less")
     } else {
         $("#popup").html("<h1>" + code + "</h1>")
-        $("#popup").addClass("active").addClass("less")
+        $("#popup").addClass("active").addClass("less").removeClass("more")
     }
 }
 
